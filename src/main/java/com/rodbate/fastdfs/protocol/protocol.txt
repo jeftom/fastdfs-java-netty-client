@@ -1,0 +1,15 @@
+
+
+    <body length>   // 包体长度   long[8byte]         ---------------> header
+          |
+          |
+         \|/
+      <cmd code>     //请求命令  byte[1byte]
+          |
+          |
+         \|/
+    <status code>    //状态码  byte[1byte]    0==success !0==fail    ---------------> header
+          |
+          |
+         \|/
+        <body>
